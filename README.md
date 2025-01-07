@@ -13,6 +13,7 @@
 ![Page Login QR code](assets/Login.png)
 
 # 2. Page Register
+![Page Login QR code](assets/Register.png)
 
 # 3. Page Login QR
 ![Page Login QR code](assets/QR.png)
