@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Face Recognition Login</title>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Login with Face Recognition</h2>
+    <button id="start-camera" onclick="openCamera()">Start Face Recognition</button>
+  </div>
+
+  <!-- Loading spinner -->
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Popup Camera -->
+  <div id="camera-popup" class="camera-popup">
+    <div class="camera-popup-content">
+      <button class="close-btn" onclick="closeCamera()">&#10006;</button> <!-- Icon Close -->
+      <video id="videoElement" autoplay></video>
+      <button class="recognize-btn" onclick="startFaceRecognition()">Start Face Recognition</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
