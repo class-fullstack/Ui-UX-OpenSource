@@ -27,6 +27,12 @@
 # 6. Page OTP
 ![Page Login QR code](assets/OTP.png)
 
+# 7. Page Face Recognition
+![Page Login QR code](assets/FaceRecognition1.png)
+
+![Page Login QR code](assets/FaceRecognition2.png)
+
+![Page Login QR code](assets/FaceRecognition3.png)
 
 
 ## Tài Khoản Donate li Cf để có động lực code cho anh em tham khảo 😄😄
