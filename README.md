@@ -19,20 +19,20 @@
 ![Page Login QR code](assets/QR.png)
 
 # 4. Page Forget
-![Page Login QR code](assets/Forget.png)
+![Page Forget](assets/Forget.png)
 
 # 5. Page Enter Phone
-![Page Login QR code](assets/EnterPhone.png)
+![Page Enter Phone](assets/EnterPhone.png)
 
 # 6. Page OTP
-![Page Login QR code](assets/OTP.png)
+![Page OTP](assets/OTP.png)
 
 # 7. Page Face Recognition
-![Page Login QR code](assets/FaceRecognition1.png)
+![Page Face Recognition](assets/FaceRecognition1.png)
 
-![Page Login QR code](assets/FaceRecognition2.png)
+![Page Face Recognition](assets/FaceRecognition2.png)
 
-![Page Login QR code](assets/FaceRecognition3.png)
+![Page Face Recognition](assets/FaceRecognition3.png)
 
 
 ## Tài Khoản Donate li Cf để có động lực code cho anh em tham khảo 😄😄
