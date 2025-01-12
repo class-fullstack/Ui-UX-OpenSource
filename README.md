@@ -7,7 +7,7 @@
 <a href = "mailto:nguyentientai10@gmail.com"><img src="https://img.icons8.com/fluency/48/000000/send-mass-email.png" alt="License"></a>
 </p>
 
-## Des: This is repo Open-source for everybody can copy and use UI UX. 
+## Des: This is a repo open source for everybody can copy and use UI UX. 
 
 # 1. Page Login
 ![Page Login QR code](assets/Login.png)
@@ -25,17 +25,10 @@
 ![Page Enter Phone](assets/EnterPhone.png)
 
 # 6. Page OTP
-<<<<<<< HEAD
 ![Page OTP](assets/OTP.png)
 
 # 7. Page Face Recognition
-![Page Face Recognition](assets/FaceRecognition1.png)
-=======
-![Page Page OTP](assets/OTP.png)
-
-# 7. Page Face Recognition
 ![Page Login  Face Recognition](assets/FaceRecognition1.png)
->>>>>>> c8b6e6703d7e71a2e3b263258673bda893a8001a
 
 ![Page Face Recognition](assets/FaceRecognition2.png)
 
