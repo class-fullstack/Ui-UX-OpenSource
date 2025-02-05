@@ -7,13 +7,13 @@
 <a href = "mailto:nguyentientai10@gmail.com"><img src="https://img.icons8.com/fluency/48/000000/send-mass-email.png" alt="License"></a>
 </p>
 
-## Des: This is a repo open source so everybody can copy and use UI UX. 
+## Des: This repo is open source so everybody can copy and use UI UX. 
 
 # 1. Page Login
 ![Page Login QR code](assets/Login.png)
 
 # 2. Page Register
-![Page Login QR code](assets/Register.png)
+![Page Register QR code](assets/Register.png)
 
 # 3. Page Login QR
 ![Page Login QR code](assets/QR.png)
