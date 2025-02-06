@@ -25,21 +25,17 @@
 ![Page Enter Phone](assets/EnterPhone.png)
 
 # 6. Page OTP
-<<<<<<< HEAD
 ![Page OTP](assets/OTP.png)
 
 # 7. Page Face Recognition
 ![Page Face Recognition](assets/FaceRecognition1.png)
-=======
-![Page Page OTP](assets/OTP.png)
-
-# 7. Page Face Recognition
-![Page Login  Face Recognition](assets/FaceRecognition1.png)
->>>>>>> c8b6e6703d7e71a2e3b263258673bda893a8001a
 
 ![Page Face Recognition](assets/FaceRecognition2.png)
 
 ![Page Face Recognition](assets/FaceRecognition3.png)
+
+# 8. Page Notfound
+![Page NotFound](assets/Notfound.png)
 
 
 ## Tài Khoản Donate li Cf để có động lực code cho anh em tham khảo 😄😄
