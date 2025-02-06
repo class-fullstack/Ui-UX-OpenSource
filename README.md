@@ -37,6 +37,9 @@
 # 8. Page Notfound
 ![Page NotFound](assets/Notfound.png)
 
+# 8. Loading
+![Page Loading](assets/Loading-page.png)
+
 
 ## Tài Khoản Donate li Cf để có động lực code cho anh em tham khảo 😄😄
 
