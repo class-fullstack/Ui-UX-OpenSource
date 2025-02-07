@@ -45,6 +45,11 @@
 # 10. Error Page
 ![Page Error](assets/error.png)
 
+# 11. Popup
+![Popup Ino](assets/popup/info/image1.png)
+
+![Popup Ino](assets/popup/info/image2.png)
+
 
 ## Tài Khoản Donate li Cf để có động lực code cho anh em tham khảo 😄😄
 
