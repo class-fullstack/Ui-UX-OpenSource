@@ -37,11 +37,13 @@
 # 8. Page Notfound
 ![Page NotFound](assets/Notfound.png)
 
-# 8. Loading
+# 9. Loading
 ![Page Loading](assets/Loading-page.png)
 
 ![Page Loading component](assets/loading-component.png)
 
+# 10. Error Page
+![Page Error](assets/error.png)
 
 
 ## Tài Khoản Donate li Cf để có động lực code cho anh em tham khảo 😄😄
