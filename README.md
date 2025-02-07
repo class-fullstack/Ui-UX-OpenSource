@@ -50,6 +50,10 @@
 
 ![Popup Ino](assets/popup/info/image2.png)
 
+# 12. Cookie
+![Page Cookie](assets/cookie/image.png)
+
+
 
 ## Tài Khoản Donate li Cf để có động lực code cho anh em tham khảo 😄😄
 
