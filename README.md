@@ -61,6 +61,9 @@
 
 ![Page Shop](assets/e-commerce/shop.png)
 
+![Page Blog](assets/e-commerce/blogs.png)
+
+
 
 
 
