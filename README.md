@@ -9,6 +9,8 @@
 
 ## Des: This repo is open source so everybody can copy and use UI UX. 
 
+# This is a template sample HTML CSS JS to can use it with many requirements
+
 # 1. Page Login
 ![Page Login QR code](assets/Login.png)
 
@@ -34,8 +36,8 @@
 
 ![Page Face Recognition](assets/FaceRecognition3.png)
 
-# 8. Page Notfound
-![Page NotFound](assets/Notfound.png)
+# 8. Page Not found
+![Page Not Found](assets/Notfound.png)
 
 # 9. Loading
 ![Page Loading](assets/Loading-page.png)
@@ -46,13 +48,12 @@
 ![Page Error](assets/error.png)
 
 # 11. Popup
-![Popup Ino](assets/popup/info/image1.png)
+![Popup Ino 1](assets/popup/info/image1.png)
 
-![Popup Ino](assets/popup/info/image2.png)
+![Popup Ino 2](assets/popup/info/image2.png)
 
 # 12. Cookie
 ![Page Cookie](assets/cookie/image.png)
-
 
 
 ## Tài Khoản Donate li Cf để có động lực code cho anh em tham khảo 😄😄
