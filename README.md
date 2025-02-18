@@ -68,6 +68,9 @@
 
 ![Page Cart](assets/e-commerce/cart.png)
 
+![Page Product Detail](assets/e-commerce/product-detail.png)
+
+
 
 
 
