@@ -1,0 +1,477 @@
+/* ================ CORE STYLES ================ */
+:root {
+  --primary-color: #2a2a72;
+  --secondary-color: #ffa400;
+  --accent-color: #ff4e60;
+  --text-dark: #2c3e50;
+  --text-light: #ecf0f1;
+  --shadow: 0 10px 30px rgba(0,0,0,0.15);
+  --gradient: linear-gradient(135deg, var(--primary-color) 0%, #3b3b98 100%);
+  --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  --section-spacing: 2.5rem;
+  --border-radius: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: linear-gradient(45deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6;
+  overflow-x: hidden;
+  color: var(--text-dark);
+}
+
+/* ================ MAIN CONTAINER ================ */
+.container {
+  text-align: center;
+  padding: var(--section-spacing);
+}
+
+/* ================ TRIGGER BUTTON ================ */
+#openPopup {
+  background: var(--gradient);
+  color: white;
+  border-radius: 50px;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#openPopup .fa-gift {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+#openPopup:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* ================ POPUP OVERLAY ================ */
+.popup-ad {
+  opacity: 0;
+  position: fixed;
+  display: none;
+  transition: opacity 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  backdrop-filter: blur(12px);
+  z-index: 9999;
+  animation: fadeIn 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.popup-ad.closing .popup-content {
+  animation: slideDown 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px) scale(0.9);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ================ POPUP CONTENT ================ */
+.popup-content {
+  position: relative;
+  background: rgba(255,255,255,0.98);
+  border-radius: var(--border-radius);
+  padding: 5rem 3rem 3rem;
+  width: 95%;
+  max-width: 560px;
+  height: auto;
+  margin: 2rem auto;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+  animation: slideUp 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(120px) scale(0.85);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* ================ MEDIA SECTION ================ */
+.popup-media {
+  position: relative;
+  margin: -2.5rem -1.5rem 2rem;
+  border-radius: 15px;
+  overflow: hidden;
+  transform: translateZ(50px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.popup-content img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.8s ease;
+  mix-blend-mode: multiply; 
+}
+
+.popup-content:hover img {
+  transform: scale(1.03);
+}
+
+/* ================ TEXT CONTENT ================ */
+.popup-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.popup-text h2 {
+  font-size: 2.4rem;
+  color: var(--primary-color);
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
+.popup-text h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--secondary-color);
+}
+
+.popup-text p {
+  font-size: 1.15rem;
+  color: var(--text-dark);
+  margin: 1.5rem auto 2.5rem;
+  max-width: 80%;
+}
+
+/* ================ COUNTDOWN TIMER ================ */
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.timer-item {
+  text-align: center;
+  background: rgba(42,42,114,0.1);
+  padding: 1rem;
+  border-radius: 15px;
+  min-width: 80px;
+}
+
+.timer-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.3rem;
+}
+
+.timer-label {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ================ BUTTONS ================ */
+.buy-now-btn {
+  background: var(--gradient);
+  color: white;
+  padding: 1.2rem 3rem;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Hiệu ứng ánh sáng chạy */
+.buy-now-btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 25%,
+    rgba(255,255,255,0.2) 50%,
+    transparent 75%
+  );
+  animation: shine 4s infinite linear;
+  transform: rotate(45deg);
+}
+
+@keyframes shine {
+  0% { transform: translateX(-150%) rotate(45deg); }
+  100% { transform: translateX(150%) rotate(45deg); }
+}
+
+/* Hiệu ứng hover */
+.buy-now-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3),
+              inset 0 0 20px rgba(255,255,255,0.2);
+  background-size: 120% 120%;
+}
+
+/* Hiệu ứng khi click */
+.buy-now-btn:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Hiệu ứng text */
+.buy-now-btn span {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.buy-now-btn:hover span {
+  transform: translateX(5px);
+}
+
+/* Icon animation */
+.buy-now-btn i {
+  transition: transform 0.3s ease;
+}
+
+.buy-now-btn:hover i {
+  transform: translateX(3px) rotate(90deg);
+}
+
+
+
+/* ================ CLOSE BUTTON ENHANCEMENT ================ */
+.close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 45px;
+  height: 45px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+  z-index: 3;
+}
+
+.close-btn::before,
+.close-btn::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: var(--transition);
+}
+
+.close-btn::before { transform: translate(-50%, -50%) rotate(45deg); }
+.close-btn::after { transform: translate(-50%, -50%) rotate(-45deg); }
+
+.close-btn:hover {
+  transform: rotate(180deg) scale(1.1);
+  background: #ff2d42;
+}
+
+/* ================ DISCOUNT BADGE ANIMATION ================ */
+.discount-badge {
+  position: absolute;
+  top: -15px;
+  left: -15px; /* Thay right thành left */
+  background: var(--accent-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 800;
+  font-size: 1.4rem;
+  transform: rotate(-15deg); /* Đổi chiều xoay */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  animation: badgePulse 1.5s ease-in-out infinite;
+  z-index: 2;
+}
+
+@keyframes badgePulse {
+  0%, 100% { 
+    transform: rotate(-15deg) scale(1); /* Đổi chiều xoay */
+  }
+  50% { 
+    transform: rotate(-15deg) scale(1.1); /* Đổi chiều xoay */
+  }
+}
+
+
+/* ================ BACKGROUND PARTICLES ================ */
+.popup-ad::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 50% 50%, 
+    rgba(255,255,255,0.1) 0%,
+    rgba(255,255,255,0) 70%);
+  animation: particleMove 20s linear infinite;
+}
+
+@keyframes particleMove {
+  from { transform: scale(1); opacity: 0.8; }
+  to { transform: scale(3); opacity: 0; }
+}
+
+/* ================ RESPONSIVE DESIGN ================ */
+@media (max-width: 768px) {
+  .popup-content {
+    padding: 3rem 1.5rem 2rem;
+    max-width: 90%;
+  }
+
+  .popup-media {
+    margin: -1.5rem -1rem 1.5rem;
+  }
+
+  .popup-content img {
+    height: 250px;
+  }
+
+  .popup-text h2 {
+    font-size: 2rem;
+  }
+
+  .countdown-timer {
+    gap: 1.5rem;
+  }
+
+  .timer-item {
+    min-width: 70px;
+    padding: 0.8rem;
+  }
+
+  .timer-number {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-content {
+    border-radius: 1rem;
+    padding: 2.5rem 1rem 1.5rem;
+  }
+
+  .close-btn {
+    top: 1rem;
+    right: 1rem;
+    width: 35px;
+    height: 35px;
+  }
+
+  .discount-badge {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem;
+    top: -10px;
+    right: -10px;
+  }
+
+  .buy-now-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .timer-item {
+    min-width: 60px;
+    padding: 0.6rem;
+  }
+
+  .timer-number {
+    font-size: 1.5rem;
+  }
+}
+
+/* ================ LOADING ANIMATION ================ */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.loading-placeholder {
+  animation: shimmer 1.5s infinite linear;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+}
+
+/* ================ ACCESSIBILITY ================ */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ================ PRINT STYLES ================ */
+@media print {
+  .popup-ad {
+    display: none !important;
+  }
+}

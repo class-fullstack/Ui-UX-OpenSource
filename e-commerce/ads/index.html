@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Quảng Cáo Cao Cấp</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <button id="openPopup">
+      Xem Ưu Đãi Đặc Biệt
+      <i class="fas fa-gift"></i>
+    </button>
+  </div>
+
+  <div id="popupAd" class="popup-ad">
+    <div class="popup-content">
+      <div class="discount-badge">-50%</div>
+      <button class="close-btn"></button>
+      
+      <div class="popup-media">
+        <img src="../images/products/f2-removebg.png" alt="Sản phẩm cao cấp">
+      </div>
+
+      <div class="popup-text">
+        <h2>Ưu Đãi Đặc Biệt</h2>
+        <p>Khám phá bộ sưu tập mới nhất với mức giá cực sốc chỉ trong hôm nay!</p>
+        
+        <div class="countdown-timer">
+          <div class="timer-item">
+            <div class="timer-number" id="hours">00</div>
+            <div class="timer-label">Giờ</div>
+          </div>
+          <div class="timer-item">
+            <div class="timer-number" id="minutes">00</div>
+            <div class="timer-label">Phút</div>
+          </div>
+          <div class="timer-item">
+            <div class="timer-number" id="seconds">00</div>
+            <div class="timer-label">Giây</div>
+          </div>
+        </div>
+
+        <button class="buy-now-btn">
+          Mua Ngay
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

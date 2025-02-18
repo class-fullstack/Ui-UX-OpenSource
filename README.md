@@ -70,6 +70,9 @@
 
 ![Page Product Detail](assets/e-commerce/product-detail.png)
 
+![Page Ads](assets/e-commerce/ads.png)
+
+
 
 
 
