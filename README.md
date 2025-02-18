@@ -66,6 +66,7 @@
 ![Page About](assets/e-commerce/about1.png)
 ![Page About](assets/e-commerce/about2.png)
 
+![Page Cart](assets/e-commerce/cart.png)
 
 
 
